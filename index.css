@@ -4,9 +4,17 @@
 
 .item {
 	display: inline-block;
+	color: rgb(35, 200, 200);
 }
-
 .nav-right {
 	float: right;
 	margin-right: 20px;
+}
+
+.shoe-icon {
+	height: 20px;
+}
+
+.main-shoe {
+	background-color: red;
 }
