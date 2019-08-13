@@ -1,30 +1,93 @@
+var dogColor = "color";
 
+var dog = {
+	name: "fido",
+	age: 8,
+	color: "brown",
+};
 
-var firstNumber = 4;
+dog.name = "Lucy";
 
-var secondNumber = 2;
+var students = ["Alejandra", "Jesse", "Jessica", "Tamar"];
 
-firstNumber = 10;
+var trees = ["pine", "cypress", "hemlock"];
+/*
+ * replace cypress with maple
+ * add walnut, cherry, poplar
+ *
+ */
+trees[1] = "maple";
+trees[3] = "walnut";
+trees[4] = "cherry";
+trees[5] = "poplar";
 
-var sum = firstNumber + secondNumber;
+var string = "name";
 
-var thing;
+string = "noName";
 
-var sentence = 'you\'re';
-
-var person = {
-	name: "Andrew",
-	age: 29,
-	favoriteColor: "Green"
+function doubleAndAddTax(price) {
+  var result = price * 2;
+  result = result * 1.07;
+  return result;
 }
 
-var car = "my broken car ";
-var yesterday = "yesterday";
-var carVerb = "broke down ";
-// Way 1
-var phrase1 = "I got dinner " + yesterday;
-console.log(phrase1);
-// Way 2
-console.log("Way 2");
+// console.log(doubleAndAddTax(35));
 
-console.log( car + carVerb + yesterday );
+function sentence(a, b) {
+	return a + b;
+}
+
+var speech = sentence("Howdy ", "folks!");
+console.log(speech);
+
+function difference(a, b, c) {
+	return (a - b) * c;
+}
+
+var result = difference(385, 142);
+// console.log(result);
+
+
+
+
+
+
+
+//
+
+// Exercise 1
+// The below function does not work. The variable twoPlusTwo gets set to
+// undefined. Refactor the function to make it work.
+
+function addNumbers(numberA, numberB) {
+  console.log(numberA + numberB);
+}
+
+var twoPlusTwo = addNumbers(2, 2)
+
+console.log(twoPlusTwo) // 4
+
+// Exercise 2
+// Write a function called yell that logs out an uppercase version of a string.
+
+function yell() {
+
+}
+
+// Write a function called yell10 that uses your yell function to log out an
+// uppercase version of a string 10 times.
+
+function yell10() {
+
+}
+
+// Exercise 3
+// Write a function called longest that returns the longest of two input strings
+//or arrays.
+
+
+
+// Exercise 4
+// Write a function called isVowel that takes a character (i.e. a string of
+// length 1) and returns true if it is a vowel, uppercase or lowercase. The
+// function should return false if the character is not a vowel

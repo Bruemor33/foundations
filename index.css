@@ -1,12 +1,13 @@
-h1, h2, h3 {
+h1, h2, h3, p, li {
 	font-family: Blinker, serif;
 	font-weight: 700;
 }
 
 p, li {
-	font-family: Blinker, serif;
 	font-weight: 200;
 }
+
+
 
 /***
 Navbar
@@ -16,10 +17,17 @@ Navbar
 	display: inline-block;
 }
 
+div .item {
+	color: black;
+}
+
 .item {
 	display: inline-block;
 	color: rgb(35, 200, 200);
 }
+
+
+
 .nav-right {
 	float: right;
 	margin-right: 20px;
@@ -37,6 +45,10 @@ Product Banner
 
 #product-banner {
 	background: linear-gradient(to left, #E32525, #E32590);
+}
+
+#overlay {
+	background: linear-gradient(rgba(255, 68, 100, 0.5));
 }
 
 /***
